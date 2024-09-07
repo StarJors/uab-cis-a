@@ -188,11 +188,11 @@ EMAIL_HOST_USER = 'shuerkk.14@gmail.com'  # Tu dirección de correo electrónico
 EMAIL_HOST_PASSWORD = 'kikioymvcwcumkwz'  # Tu contraseña de correo electrónico
 
 #configuraciones
-#ALLOWED_HOSTS = ['127.0.0.1','localhost','']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','producción-web-5a454.up.railway.app']
 
 
 
 # Debe ir fuera de la lista MIDDLEWARE
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#CSRF_TRUSTED_ORIGINS = ['http://*','https://']
+CSRF_TRUSTED_ORIGINS = ['http://*','https://producción-web-5a454.up.railway.app']
