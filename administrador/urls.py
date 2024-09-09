@@ -35,6 +35,7 @@ urlpatterns = [
     # APLICACIION INTERACCION SOCIAL
     path('', include('interaccion_social.urls')),
 
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
+]
+if settings.ENVIRONMENT == 'development':
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

@@ -104,22 +104,6 @@ if ENVIRONMENT == 'production' or POSTGRES_LOCALLY == True:
     DATABASES['default'] = dj_database_url.parse(env('DATABASE_URL'))
 
 
-# Obtener el valor de ENVIRONMENT desde el archivo .env
-
-
-# Habilitar PostgreSQL si estás en producción o si POSTGRES_LOCALLY es True
-#POSTGRES_LOCALLY = True
-
-#POSTGRES_LOCALLY = os.getenv('POSTGRES_LOCALLY', default='False').lower() in ['true', '1', 't']
-
-#if ENVIRONMENT == 'production' or POSTGRES_LOCALLY:
-#    DATABASES['default'] = dj_database_url.config(default=os.getenv('DATABASE_URL'))
-
-#POSTGRES_LOCALLY = True
-#if ENVIRONMENT == 'production' or POSTGRES_LOCALLY == True:
-#    DATABASES['default'] = dj_database_url.parse(env('DATABASE_URL'))
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
