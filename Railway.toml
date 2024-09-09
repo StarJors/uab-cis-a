@@ -1,0 +1,6 @@
+[[services]]
+name = "web"
+start = "gunicorn administrador.wsgi:application --bind 0.0.0.0:8000"
+
+[[services.envs]]
+RAILWAY_NGINX = "true"
