@@ -1,6 +1,6 @@
 [[services]]
 name = "web"
-start = "gunicorn administrador.wsgi:application --bind 0.0.0.0:8080"  # Ajustar al puerto correcto
+start = "gunicorn administrador.wsgi:application --bind 0.0.0.0:8080"  
 
 [[services.envs]]
 RAILWAY_NGINX = "true"
